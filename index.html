@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wind Energy India: Strategy, Maps and Calculators</title>
+  <meta name="description" content="India wind energy guide: capacity, state-wise wind speed, zones, formulae, licensing and selling procedures.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="brand">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <g class="spin-sm" style="transform-origin:20px 16px">
+            <path d="M20 16 L17.5 2 Q20 0 22.5 2 Z"/>
+            <path d="M20 16 L32 23 Q31.5 26 29 26 Z"/>
+            <path d="M20 16 L8 23 Q8.5 26 11 26 Z"/>
+          </g>
+          <rect x="19" y="16" width="2" height="22" rx="1"/>
+        </svg>
+        <span>Wind India</span>
+      </a>
+      <nav class="links" id="links" aria-label="Sections">
+        <a href="#strategy">Strategy</a>
+        <a href="#capacity">Capacity</a>
+        <a href="#map">Map</a>
+        <a href="#formulae">Formulae</a>
+        <a href="#business">Business</a>
+        <a href="#speed">Wind speed</a>
+        <a href="#zones">Zones</a>
+        <a href="#licensing">Licensing</a>
+        <a href="#selling">Selling</a>
+        <a href="#summary">Key points</a>
+      </nav>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <span class="sun">&#9728;</span><span class="moon">&#9790;</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <svg class="turbine t1" viewBox="0 0 200 320"><g class="rotor" style="transform-origin:100px 90px"><path d="M100 90 L92 8 Q100 0 108 8 Z"/><path d="M100 90 L171 131 Q168 142 158 140 Z"/><path d="M100 90 L29 131 Q32 142 42 140 Z"/></g><path d="M97 90 L103 90 L108 318 L92 318 Z"/><circle cx="100" cy="90" r="7"/></svg>
+        <svg class="turbine t2" viewBox="0 0 200 320"><g class="rotor slow" style="transform-origin:100px 90px"><path d="M100 90 L92 8 Q100 0 108 8 Z"/><path d="M100 90 L171 131 Q168 142 158 140 Z"/><path d="M100 90 L29 131 Q32 142 42 140 Z"/></g><path d="M97 90 L103 90 L108 318 L92 318 Z"/><circle cx="100" cy="90" r="7"/></svg>
+      </div>
+      <div class="wrap hero-inner">
+        <p class="eyebrow">Wind renewable energy &middot; India &middot; as of Nov 2026</p>
+        <h1>India has <span class="grad">59.2 GW</span> of wind.<br>Here is where, and how, to build more.</h1>
+        <p class="lead">Capacity, state-wise wind speeds and direction, profit zones, formulae, licensing and selling routes, in one place.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#map">See the wind map</a>
+          <a class="btn ghost" href="#formulae">Try the calculator</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><b data-count="59.2" data-dec="1">0</b><span>GW installed (Sep 2026)</span></div>
+          <div class="stat"><b data-count="4" data-prefix="#">0</b><span>largest wind fleet in the world</span></div>
+          <div class="stat"><b data-count="6057" data-sep="1">0</b><span>MW added in FY2025-26, a record</span></div>
+          <div class="stat"><b data-count="1164" data-sep="1">0</b><span>GW potential at 150 m (NIWE)</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="strategy" class="sec">
+      <div class="wrap">
+        <header class="sec-head reveal"><span class="tag">1.1</span><h2>Strategy for India</h2>
+          <p>Add 6 to 8 GW a year onshore, move to taller turbines and hybrids, and open offshore later.</p></header>
+        <div class="grid three">
+          <article class="card reveal"><h3>Where India stands</h3>
+            <ul>
+              <li>Target: <b>140 GW</b> of wind by 2030.</li>
+              <li>Generation: <b>106 billion units</b> in FY2025-26, up from 83.</li>
+              <li>Turbine manufacturing: about <b>24 GW a year</b>.</li>
+              <li>Makers: Suzlon, Siemens Gamesa, Vestas, Envision, GE Vernova.</li>
+            </ul></article>
+          <article class="card reveal"><h3>Policy levers</h3>
+            <ul>
+              <li>ISTS charge waiver for wind commissioned up to <b>June 2028</b>.</li>
+              <li>Wind Renewable Consumption Obligation (RCO) creates demand.</li>
+              <li>ALMM (Wind): domestic sourcing of key components.</li>
+              <li>100% FDI (automatic route); open access from 100 kW.</li>
+            </ul></article>
+          <article class="card reveal"><h3>Strategic direction</h3>
+            <ol>
+              <li>Repower old turbines (under 1 MW) with 3 to 5 MW machines.</li>
+              <li>Build in high-wind states first, then low-wind machines elsewhere.</li>
+              <li>Pair wind with solar and storage for evening supply.</li>
+              <li>Sell to corporates by group captive and open access.</li>
+            </ol></article>
+        </div>
+        <p class="note reveal">Offshore: Gujarat and Tamil Nadu are priority zones, but no offshore project has been awarded yet. Estimated offshore tariffs are near Rs 9.6 to 10.5 per kWh.</p>
+      </div>
+    </section>
+
+    <section id="capacity" class="sec alt">
+      <div class="wrap">
+        <header class="sec-head reveal"><span class="tag">1.2</span><h2>State-wise capacity and potential</h2>
+          <p>Seven states hold 99% of installed wind. Rajasthan has the most untapped potential.</p></header>
+        <div class="toolbar reveal">
+          <span>Sort by</span>
+          <button class="chip active" data-sort="mw">Installed MW</button>
+          <button class="chip" data-sort="gen">Generation FY26</button>
+          <button class="chip" data-sort="p150">Potential at 150 m</button>
+        </div>
+        <div class="table-wrap reveal">
+          <table class="data" id="stateTable">
+            <thead><tr><th>State</th><th>Installed MW<small>30 Jun 2026</small></th><th>Generation FY26<small>million units</small></th><th>Potential 120 m<small>GW</small></th><th>Potential 150 m<small>GW</small></th><th class="barcol">Installed share</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="grid four mini reveal">
+          <div class="mini-card"><b>1,584</b><span>MW added Jan to Mar 2026</span></div>
+          <div class="mini-card"><b>1,348</b><span>MW added Apr to Jun 2026</span></div>
+          <div class="mini-card"><b>1,758</b><span>MW added Jul to Sep 2026</span></div>
+          <div class="mini-card"><b>~5%</b><span>of 150 m potential built</span></div>
+        </div>
+        <p class="note reveal">National total: 57,443 MW (June 2026) and 59,201 MW (September 2026). Gujarat reached 17,044 MW by September. Generation for the other states was not listed in the source.</p>
+      </div>
+    </section>
+
+    <section id="map" class="sec">
+      <div class="wrap">
+        <header class="sec-head reveal"><span class="tag">Map</span><h2>India wind speed and direction map</h2>
+          <p>Indicative annual mean speed (m/s) by state, with prevailing seasonal wind direction.</p></header>
+        <div class="toolbar reveal">
+          <button class="chip active" data-map="images/india_wind_speed_direction_map.png">Speed + direction</button>
+          <button class="chip" data-map="images/India_wind_zone_map_en.png">Speed only in m/s</button>
+          <button class="chip" id="zoomBtn">Enlarge</button>
+        </div>
+        <figure class="map-fig reveal">
+          <img id="mapImg" src="images/india_wind_speed_direction_map.png" alt="Map of India coloured by state wind speed in metres per second, with wind direction arrows">
+          <figcaption>Blue arrows: south-west monsoon (June to September). Purple dashed arrows: north-east monsoon (October to December), Tamil Nadu and coastal Andhra. Speeds are approximate at 100 to 120 m hub height; Odisha is at 150 m. Boundaries come from an older dataset (Telangana inside Andhra Pradesh).</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="formulae" class="sec alt">
+      <div class="wrap">
+        <header class="sec-head reveal"><span class="tag">1.3</span><h2>Formulae and calculators</h2>
+          <p>Power rises with the cube of wind speed. A site 10% windier gives about 33% more power.</p></header>
+        <div class="grid two">
+          <div class="formulas">
+            <div class="formula reveal"><h3>Power in the wind</h3><p class="eq">P = &frac12; &middot; &rho; &middot; A &middot; v<sup>3</sup></p><small>&rho; air density (about 1.18 kg/m&sup3;), A swept area (m&sup2;), v speed (m/s)</small></div>
+            <div class="formula reveal"><h3>Power a turbine captures</h3><p class="eq">P = &frac12; &middot; &rho; &middot; A &middot; v<sup>3</sup> &middot; C<sub>p</sub> &middot; &eta;</p><small>C<sub>p</sub> up to 0.593 (Betz limit); real turbines 0.40 to 0.48</small></div>
+            <div class="formula reveal"><h3>Swept area and power density</h3><p class="eq">A = &pi;(D/2)<sup>2</sup> &nbsp;&nbsp; WPD = &frac12; &rho; v<sup>3</sup> (W/m&sup2;)</p></div>
+            <div class="formula reveal"><h3>Air density</h3><p class="eq">&rho; = p / (R &middot; T)</p><small>R = 287 J/kg&middot;K, T in kelvin. Hot, high sites lose output.</small></div>
+            <div class="formula reveal"><h3>Wind shear (speed at hub height)</h3><p class="eq">v<sub>2</sub> = v<sub>1</sub> &middot; (h<sub>2</sub> / h<sub>1</sub>)<sup>&alpha;</sup></p><small>&alpha; about 0.14 on open land, 0.20 to 0.30 in rough terrain</small></div>
+            <div class="formula reveal"><h3>Weibull distribution</h3><p class="eq">f(v) = (k/c)(v/c)<sup>k-1</sup> e<sup>-(v/c)<sup>k</sup></sup></p><small>k usually 1.8 to 2.5; c about 1.12 &times; mean speed</small></div>
+            <div class="formula reveal"><h3>CUF and annual energy</h3><p class="eq">CUF = E / (P<sub>rated</sub> &times; 8760)</p><small>E = P<sub>rated</sub> &times; 8760 &times; CUF; revenue = E &times; tariff</small></div>
+            <div class="formula reveal"><h3>LCOE</h3><p class="eq">LCOE = &Sigma; (I<sub>t</sub> + O&amp;M<sub>t</sub>)/(1+r)<sup>t</sup> &divide; &Sigma; E<sub>t</sub>/(1+r)<sup>t</sup></p><small>Turbine spacing: 3 to 5 D across the wind, 5 to 9 D along it.</small></div>
+          </div>
+
+          <div class="calc-col">
+            <div class="calc reveal" id="calc1">
+              <h3>Turbine output calculator</h3>
+              <label>Wind speed at hub <output id="o-v">7.0</output> m/s<input type="range" id="v" min="3" max="12" step="0.1" value="7"></label>
+              <label>Rotor diameter <output id="o-d">160</output> m<input type="range" id="d" min="60" max="200" step="1" value="160"></label>
+              <label>Rated power <output id="o-r">4.2</output> MW<input type="range" id="r" min="1" max="7" step="0.1" value="4.2"></label>
+              <label>Power coefficient C<sub>p</sub> <output id="o-cp">0.45</output><input type="range" id="cp" min="0.30" max="0.50" step="0.01" value="0.45"></label>
+              <label>Capacity utilisation (CUF) <output id="o-cuf">35</output> %<input type="range" id="cuf" min="15" max="50" step="1" value="35"></label>
+              <label>Tariff <output id="o-t">3.85</output> Rs/kWh<input type="range" id="t" min="2.5" max="6" step="0.05" value="3.85"></label>
+              <div class="results">
+                <div><span>Swept area</span><b id="res-a">-</b></div>
+                <div><span>Power in wind</span><b id="res-w">-</b></div>
+                <div><span>Captured power</span><b id="res-c">-</b></div>
+                <div><span>Energy per year</span><b id="res-e">-</b></div>
+                <div class="wide"><span>Revenue per year</span><b id="res-rev">-</b></div>
+              </div>
+              <p class="badge" id="cufBadge"></p>
+              <small>Captured power is capped at the rated power and losses (&eta;) are ignored. Use measured P50 and P90 data for real projects.</small>
+            </div>
+            <div class="calc reveal" id="calc2">
+              <h3>Hub height shear calculator</h3>
+              <label>Speed at 100 m <output id="o-v1">6.5</output> m/s<input type="range" id="v1" min="4" max="10" step="0.1" value="6.5"></label>
+              <label>Shear exponent &alpha; <output id="o-al">0.20</output><input type="range" id="al" min="0.10" max="0.35" step="0.01" value="0.20"></label>
+              <label>New hub height <output id="o-h2">150</output> m<input type="range" id="h2" min="80" max="200" step="5" value="150"></label>
+              <div class="results">
+                <div><span>Speed at new height</span><b id="res-v2">-</b></div>
+                <div><span>Extra wind energy</span><b id="res-gain">-</b></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="business" class="sec">
+      <div class="wrap">
+        <header class="sec-head reveal"><span class="tag">1.4</span><h2>Business strategy for installation</h2>
+          <p>Pick the revenue route first, then the site. Tariff and grid access decide returns more than turbine choice.</p></header>
+        <div class="grid three models">
+          <article class="card reveal"><h3>Utility auction</h3><p class="price">Rs 3.43 to 3.97 /kWh</p><p>25-year PPA through SECI, SJVN or a state DISCOM. Best for developers of 50 MW and above who want low risk.</p></article>
+          <article class="card reveal"><h3>Group captive</h3><p class="price">About Rs 4.2 to 5.0 /kWh*</p><p>Industrial co-owners hold at least 26% and use 51% of the output. Good for mid-size developers with factory customers.</p></article>
+          <article class="card reveal"><h3>Open access / third party</h3><p class="price">Negotiated</p><p>Bilateral contract with a commercial buyer of 100 kW or more. Needs strong customer ties.</p></article>
+          <article class="card reveal"><h3>Own use (captive)</h3><p class="price">Avoided grid tariff</p><p>Offsets your own bill. Suits factories, data centres, cement and steel.</p></article>
+          <article class="card reveal"><h3>Repowering</h3><p class="price">Existing or new sale</p><p>Replace 1990s and 2000s turbines with 3 to 5 MW machines on the same land in Tamil Nadu and Gujarat.</p></article>
+          <article class="card reveal"><h3>Hybrid with storage</h3><p class="price">About Rs 4.4 to 4.65 /kWh*</p><p>Wind plus solar plus batteries for firm or peak supply to round-the-clock buyers.</p></article>
+        </div>
+        <p class="note reveal">* Approximate practitioner figures, not official prices.</p>
+
+        <h3 class="sub reveal">Phased plan</h3>
+        <ol class="timeline reveal">
+          <li><b>Months 0 to 3: screen</b><span>Use the NIWE atlas to shortlist 3 to 5 districts; check substations and land type.</span></li>
+          <li><b>Months 3 to 15: measure</b><span>Install a 100 m+ mast or LiDAR for at least 12 months; get P50 and P90 estimates.</span></li>
+          <li><b>Months 6 to 18: secure</b><span>Land, approvals, grid connectivity (GNA) and a buyer (bid or PPA).</span></li>
+          <li><b>Months 15 to 24: finance and build</b><span>Close debt (IREDA, banks) near 70:30; order ALMM-listed turbines; build.</span></li>
+          <li><b>Month 24 onward: operate</b><span>Commission after safety inspection; 10 to 25 year O&amp;M contract.</span></li>
+        </ol>
+
+        <div class="grid two split">
+          <div class="card reveal"><h3>Economics to check</h3>
+            <ul>
+              <li>Capex roughly <b>Rs 6 to 7.5 crore per MW</b> (approximate).</li>
+              <li>Break-even CUF usually <b>26% to 28%</b> at tariffs near Rs 3.7.</li>
+              <li>Pick substations with spare capacity to avoid curtailment.</li>
+              <li>Prefer 3 to 5 MW turbines with 140 to 160 m hubs.</li>
+              <li>Use the ISTS waiver while it lasts (commissioned by June 2028).</li>
+            </ul></div>
+          <div class="card reveal"><h3>Main risks</h3>
+            <ul>
+              <li>Land and right-of-way delays</li>
+              <li>Transmission delays and curtailment</li>
+              <li>PPA signing delays by buyers</li>
+              <li>Defence and aviation clearances</li>
+              <li>Tariff pressure from solar</li>
+            </ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="speed" class="sec alt">
+      <div class="wrap">
+        <header class="sec-head reveal"><span class="tag">1.5</span><h2>State-wise wind speed (m/s)</h2>
+          <p>Most wind states average 6 to 7 m/s at 100 m. The best sites in Tamil Nadu and Gujarat exceed 8 m/s.</p></header>
+        <div class="speedlist" id="speedList"></div>
+        <div class="grid three class-info">
+          <div class="mini-card reveal"><b>Class I</b><span>8.4 m/s or more</span></div>
+          <div class="mini-card reveal"><b>Class II</b><span>about 7.5 m/s</span></div>
+          <div class="mini-card reveal"><b>Class III</b><span>about 6.5 m/s</span></div>
+        </div>
+        <p class="note reveal">Ranges are indicative annual means at 100 to 120 m (approximate); Odisha is at 150 m. Replace them with site measurements. Speeds peak in the south-west monsoon (May to September). Offshore: about 220 GW at 7.0 m/s or more at 150 m, falling to 92 GW at 7.5 m/s (TERI).</p>
+      </div>
+    </section>
+
+    <section id="zones" class="sec">
+      <div class="wrap">
+        <header class="sec-head reveal"><span class="tag">1.6</span><h2>Where to install, and where not to</h2>
+          <p>Install where the annual mean is 7 m/s or more. Marginal at 6 to 7 m/s. Unprofitable below about 5.5 m/s.</p></header>
+        <div class="toolbar reveal" id="zoneFilter">
+          <button class="chip active" data-zone="all">All</button>
+          <button class="chip" data-zone="profit">Profit</button>
+          <button class="chip" data-zone="medium">Medium</button>
+          <button class="chip" data-zone="low">No profit</button>
+          <button class="chip" data-zone="restricted">Restricted</button>
+        </div>
+        <div class="grid two zones">
+          <article class="zone-card profit reveal" data-zone="profit"><span class="pill">Profit zone</span><h3>7 m/s or more, CUF 35% to 42%</h3>
+            <p>Southern Tamil Nadu (Tirunelveli, Tuticorin, Kanyakumari, Palghat Gap); Kutch, Jamnagar, Rajkot and Surendranagar in Gujarat; Jaisalmer, Barmer and Jodhpur in Rajasthan; Gadag, Chitradurga and Koppal in Karnataka.</p>
+            <small>Highest energy per MW, existing substations, mature supply chain.</small></article>
+          <article class="zone-card medium reveal" data-zone="medium"><span class="pill">Medium-profit zone</span><h3>6 to 7 m/s, CUF 28% to 35%</h3>
+            <p>Satara, Sangli, Dhule and Ahmednagar in Maharashtra; Anantapur, Kurnool and Kadapa in Andhra Pradesh; Dewas, Mandsaur and Neemuch in Madhya Pradesh; Telangana; Odisha ridges.</p>
+            <small>Needs low-wind turbines and tall towers; works at tariffs near Rs 3.8 or in group captive.</small></article>
+          <article class="zone-card low reveal" data-zone="low"><span class="pill">No-profit zone</span><h3>Below 5.5 m/s, CUF below 25%</h3>
+            <p>Indo-Gangetic plains (Punjab, Haryana, UP, Bihar, West Bengal), most of the North-east, Himalayan valleys and dense city belts.</p>
+            <small>Energy yield is too low to repay capex at current tariffs.</small></article>
+          <article class="zone-card restricted reveal" data-zone="restricted"><span class="pill">Restricted (any speed)</span><h3>Legal or practical bar</h3>
+            <p>Forest and wildlife sanctuaries, eco-sensitive Western Ghats cores, bird routes, land near defence sites or airports, flood-prone coasts and grid-saturated pockets.</p>
+            <small>MNRE tightened defence NOC compliance in October 2026.</small></article>
+        </div>
+        <div class="card reveal rules"><h3>Plot checklist</h3>
+          <ol>
+            <li>12 months of mast or LiDAR data at hub height.</li>
+            <li>A substation within about 20 km with spare capacity.</li>
+            <li>Flat or gently sloping land with road access for long blades.</li>
+            <li>Clear of forest, village and defence-NOC buffers.</li>
+            <li>Clean land title; land delays stall many projects.</li>
+          </ol>
+          <small>Percentages and distances are practitioner rules of thumb (approximate), not official thresholds.</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="licensing" class="sec alt">
+      <div class="wrap">
+        <header class="sec-head reveal"><span class="tag">1.7</span><h2>Government licensing and approvals</h2>
+          <p>No generation licence is needed because generation is delicensed under the Electricity Act, 2003. You do need a chain of approvals. Forms, fees and timelines differ by state.</p></header>
+        <div class="accordion reveal" id="licList"></div>
+        <div class="grid three benefits">
+          <div class="mini-card reveal"><b>ISTS waiver</b><span>Wind commissioned by 30 June 2028, then 25% to 75% charges phase in.</span></div>
+          <div class="mini-card reveal"><b>IREDA loans</b><span>Extra 0.25% interest rebate for repowering.</span></div>
+          <div class="mini-card reveal"><b>Open access</b><span>Green Energy Open Access for consumers of 100 kW or more.</span></div>
+        </div>
+        <p class="note reveal">Offshore wind: MNRE is the nodal ministry and NIWE the nodal agency. Check tax and land-law points with a chartered accountant and a lawyer.</p>
+      </div>
+    </section>
+
+    <section id="selling" class="sec">
+      <div class="wrap">
+        <header class="sec-head reveal"><span class="tag">1.8</span><h2>Selling procedures and documentation</h2>
+          <p>Six ways to sell wind power. Auctions are simplest; group captive and open access pay more but carry buyer risk.</p></header>
+        <div class="table-wrap reveal">
+          <table class="data routes">
+            <thead><tr><th>Route</th><th>How it works</th><th>Key condition</th><th>Recent price</th></tr></thead>
+            <tbody>
+              <tr><td><b>Central auction</b><br><small>SECI, SJVN, NTPC, NHPC</small></td><td>Reverse auction, letter of award, 25-year PPA</td><td>Developer finds land and builds the line to the delivery point</td><td>Rs 3.64 to 3.69 (XIX, SJVN); Rs 3.78 to 3.85 (XX)</td></tr>
+              <tr><td><b>State DISCOM auction</b></td><td>Same process, led by GUVNL, MSEDCL and others</td><td>State commission adopts the tariff</td><td>Rs 3.43 to 3.44 (GUVNL X, Dec 2025)</td></tr>
+              <tr><td><b>Group captive</b></td><td>Industrial users co-own the plant</td><td>Owners hold at least 26% and use 51% of output</td><td>Negotiated</td></tr>
+              <tr><td><b>Open access / third party</b></td><td>Wheel power to a buyer of 100 kW or more</td><td>Open access permission; wheeling and banking charges</td><td>Negotiated</td></tr>
+              <tr><td><b>Power exchange</b></td><td>Green Term Ahead Market or day-ahead market</td><td>Registration with exchange and load despatch centre</td><td>Market price</td></tr>
+              <tr><td><b>REC</b></td><td>Sell the green certificate to buyers with a Wind RCO</td><td>Registration with the REC registry</td><td>Market price</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="sub reveal">Steps in an auction sale</h3>
+        <ol class="steps reveal">
+          <li><b>Read the RfS</b><span>On the SECI or state utility site (SECI issued a 1,200 MW Tranche XXI RfS on 7 Oct 2026).</span></li>
+          <li><b>Submit the bid</b><span>Earnest money, company and financial documents, bid bond.</span></li>
+          <li><b>E-reverse auction</b><span>Lowest tariff wins.</span></li>
+          <li><b>Letter of award</b><span>Give a performance bank guarantee.</span></li>
+          <li><b>Sign the PPA</b><span>25 years; CERC or the State Commission adopts the tariff.</span></li>
+          <li><b>Close finance and build</b><span>Typical commissioning window is 24 months.</span></li>
+          <li><b>Commission</b><span>CEI/CEIG approval, buyer's NOC, then COD and monthly invoicing.</span></li>
+        </ol>
+
+        <h3 class="sub reveal">Documents checklist <small>(ticks are saved in your browser)</small></h3>
+        <div class="grid three checklist reveal" id="docList"></div>
+        <p class="note reveal">EMD, guarantee and net-worth amounts differ by tender and are set in each RfS.</p>
+      </div>
+    </section>
+
+    <section id="summary" class="sec alt">
+      <div class="wrap">
+        <header class="sec-head reveal"><span class="tag">1.9</span><h2>Conclusion: key points</h2></header>
+        <ul class="keypoints">
+          <li class="reveal"><b>Scale</b>59.2 GW installed (Sep 2026), 4th in the world; record 6,057 MW added in FY2025-26; target 140 GW by 2030.</li>
+          <li class="reveal"><b>Resource</b>1,164 GW at 150 m (NIWE), about 5% used; Rajasthan, Gujarat, Maharashtra and Karnataka hold the most.</li>
+          <li class="reveal"><b>Leaders</b>Gujarat (17.0 GW), Tamil Nadu (12.3 GW) and Karnataka (8.9 GW) are about 65% of capacity.</li>
+          <li class="reveal"><b>Physics</b>Power scales with v&sup3;. Speed and hub height matter most; use measured P50 and P90.</li>
+          <li class="reveal"><b>Best zones</b>7 m/s or more in southern Tamil Nadu, Kutch and Saurashtra, western Rajasthan and north Karnataka. Avoid the Gangetic plain and restricted land.</li>
+          <li class="reveal"><b>Prices</b>Recent auctions cleared at Rs 3.43 to 3.97 per kWh; group captive and open access can pay more.</li>
+          <li class="reveal"><b>Licensing</b>No generation licence, but state registration, ALMM turbines, defence and aviation NOCs, GNA and CEI/CEIG approval are required.</li>
+          <li class="reveal"><b>Selling</b>Auction PPA for low risk; captive or open access for higher price; REC and exchange as top-ups.</li>
+          <li class="reveal"><b>Deadlines and risks</b>ISTS waiver ends for projects commissioned after June 2028; watch land, transmission, curtailment and PPA delays.</li>
+          <li class="reveal"><b>Next steps</b>Shortlist districts from the NIWE atlas, start a 12-month mast campaign, and talk to the State Nodal Agency, the grid utility and a buyer in parallel.</li>
+        </ul>
+        <p class="note reveal">Capacity, potential, tariff and policy figures come from the sources below. Wind-speed ranges, wind directions, zone rules, capex, break-even CUF and captive prices marked approximate are practitioner estimates; verify before investing.</p>
+      </div>
+    </section>
+
+    <section id="sources" class="sec">
+      <div class="wrap">
+        <header class="sec-head reveal"><h2>Sources</h2></header>
+        <ul class="sources reveal">
+          <li><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2287725&reg=48&lang=2" target="_blank" rel="noopener">PIB: installed wind capacity 57,443 MW (30 June 2026)</a></li>
+          <li><a href="https://solarquarter.com/2026/11/04/indias-installed-wind-power-capacity-reaches-59-2-gw-with-11-year-on-year-growth-in-september-2026/" target="_blank" rel="noopener">SolarQuarter: wind capacity 59.2 GW, September 2026</a></li>
+          <li><a href="https://pib.gov.in/PressReleasePage.aspx?PRID=1947133" target="_blank" rel="noopener">PIB: wind potential of windy states (120 m and 150 m)</a></li>
+          <li><a href="https://www.teriin.org/press-release/teri-reassessment-estimates-indias-onshore-wind-potential-1210-gw-150-m-and-2934-gw" target="_blank" rel="noopener">TERI: onshore potential reassessment</a></li>
+          <li><a href="https://iea-wind.org/annual-report-2025-india/" target="_blank" rel="noopener">IEA Wind: India annual report 2025</a></li>
+          <li><a href="https://windinsider.com/2025/08/01/mnre-revamps-wind-turbine-approval-process-with-new-almm-wind-guidelines-and-security-measures/" target="_blank" rel="noopener">WindInsider: ALMM (Wind) guidelines</a></li>
+          <li><a href="https://solarquarter.com/2026/10/07/mnre-tightens-wind-project-approval-rules-near-defence-installations/" target="_blank" rel="noopener">SolarQuarter: MNRE tightens defence NOC rules</a></li>
+          <li><a href="https://renewablewatch.in/2026/07/16/seci-announces-winners-of-2-gw-wind-auction/" target="_blank" rel="noopener">Renewable Watch: SECI 2 GW wind auction (Tranche XX)</a></li>
+          <li><a href="https://solarquarter.com/2026/10/15/cerc-adopts-inr-3-67-3-69kwh-tariffs-for-1200-mw-ists-connected-wind-projects-under-seci-tranche-xix/" target="_blank" rel="noopener">SolarQuarter: CERC adopts SECI Tranche XIX tariffs</a></li>
+          <li><a href="https://indianinfrastructure.com/2026/07/03/the-wind-turns-signs-of-revival-in-the-sector/" target="_blank" rel="noopener">Indian Infrastructure: recent wind auctions</a></li>
+          <li><a href="https://www.ceew.in/node/4372" target="_blank" rel="noopener">CEEW: Odisha wind potential and speeds</a></li>
+          <li><a href="https://practiceguides.chambers.com/practice-guides/renewable-energy-2024/india" target="_blank" rel="noopener">Chambers: India renewable energy 2024 (captive rules)</a></li>
+          <li><a href="https://jmkresearch.com/india-installs-record-44-gw-solar-and-6-gw-wind-capacity-in-fy2026/" target="_blank" rel="noopener">JMK Research: FY2026 wind additions</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap"><p>Wind Energy India &middot; data as of 10 Nov 2026 &middot; for information only, not investment advice.</p></div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <img id="lbImg" alt="Enlarged wind map of India">
+  </div>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">&uarr;</button>
+  <script src="script.js"></script>
+</body>
+</html>
